@@ -1,0 +1,235 @@
+[
+   
+    { "username": "1", "password": "1", "branch": "Admin", "id": "2" } ,
+    { "username": "susha", "password": "su@5056", "branch": "Susha", "id": "2" } ,
+   { "username": "indhu", "password": "ind#781", "branch": "Indhu", "id": "2" } ,
+
+    
+   {
+    "username": "chengannur",
+    "password": "chen#10",
+    "branch": "Chengannur",
+    "id": "1"
+  },
+  {
+    "username": "cheriyanad",
+    "password": "cher#20",
+    "branch": "Cheriyanad",
+    "id": "1"
+  },
+  {
+    "username": "chettikulangara",
+    "password": "chet#30",
+    "branch": "Chettikulangara",
+    "id": "1"
+  },
+  {
+    "username": "chunakara",
+    "password": "chun#40",
+    "branch": "Chunakara",
+    "id": "1"
+  },
+  {
+    "username": "chungapara",
+    "password": "chun#50",
+    "branch": "Chungapara",
+    "id": "1"
+  },
+  {
+    "username": "edapon",
+    "password": "edap#60",
+    "branch": "Edapon",
+    "id": "1"
+  },
+  {
+    "username": "edathitta",
+    "password": "edat#70",
+    "branch": "Edathitta",
+    "id": "1"
+  },
+  {
+    "username": "kadapra",
+    "password": "kada#90",
+    "branch": "Kadapra",
+    "id": "1"
+  },
+  {
+    "username": "kagazha",
+    "password": "kaga#100",
+    "branch": "Kagazha",
+    "id": "1"
+  },
+  {
+    "username": "kakkanad",
+    "password": "kakk#110",
+    "branch": "Kakkanad",
+    "id": "1"
+  },
+  {
+    "username": "karakkad",
+    "password": "kara#130",
+    "branch": "Karakkad",
+    "id": "1"
+  },
+  {
+    "username": "kollakadavu",
+    "password": "koll#140",
+    "branch": "Kollakadavu",
+    "id": "1"
+  },
+  {
+    "username": "konni",
+    "password": "konn#150",
+    "branch": "Konni",
+    "id": "1"
+  },
+  {
+    "username": "koodal",
+    "password": "kood#160",
+    "branch": "Koodal",
+    "id": "1"
+  },
+  {
+    "username": "kotta",
+    "password": "kott#170",
+    "branch": "Kotta",
+    "id": "1"
+  },
+  {
+    "username": "kulanada",
+    "password": "kula#180",
+    "branch": "Kulanada",
+    "id": "1"
+  },
+  {
+    "username": "kulikampalam",
+    "password": "kuli#190",
+    "branch": "Kulikampalam",
+    "id": "1"
+  },
+  {
+    "username": "kunnamthanam",
+    "password": "kunn#200",
+    "branch": "Kunnamthanam",
+    "id": "1"
+  },
+  {
+    "username": "kunnikkuzhy",
+    "password": "kunn#210",
+    "branch": "Kunnikkuzhy",
+    "id": "1"
+  },
+  {
+    "username": "mannar",
+    "password": "mann#220",
+    "branch": "Mannar",
+    "id": "1"
+  },
+  {
+    "username": "nariyapuram",
+    "password": "nari#230",
+    "branch": "Nariyapuram",
+    "id": "1"
+  },
+  {
+    "username": "omalloor",
+    "password": "omal#240",
+    "branch": "Omalloor",
+    "id": "1"
+  },
+  {
+    "username": "pallickal",
+    "password": "pall#250",
+    "branch": "Pallickal",
+    "id": "1"
+  },
+  {
+    "username": "pandalam",
+    "password": "pand#260",
+    "branch": "Pandalam",
+    "id": "1"
+  },
+  {
+    "username": "pandanad",
+    "password": "pand#270",
+    "branch": "Pandanad",
+    "id": "1"
+  },
+  {
+    "username": "parumala",
+    "password": "paru#280",
+    "branch": "Parumala",
+    "id": "1"
+  },
+  {
+    "username": "perumpetty",
+    "password": "peru#290",
+    "branch": "Perumpetty",
+    "id": "1"
+  },
+  {
+    "username": "punthala",
+    "password": "punt#291",
+    "branch": "Punthala",
+    "id": "1"
+  },
+  {
+    "username": "puramattom",
+    "password": "pura#292",
+    "branch": "Puramattom",
+    "id": "1"
+  },
+  {
+    "username": "sooranad",
+    "password": "soor#293",
+    "branch": "Sooranad",
+    "id": "1"
+  },
+  {
+    "username": "thattarambalam",
+    "password": "that#294",
+    "branch": "Thattarambalam",
+    "id": "1"
+  },
+  {
+    "username": "thevelakkara",
+    "password": "thev#295",
+    "branch": "Thevelakkara",
+    "id": "1"
+  },
+  {
+    "username": "thiruvalla",
+    "password": "thir#296",
+    "branch": "Thiruvalla",
+    "id": "1"
+  },
+  {
+    "username": "ulanadu",
+    "password": "ulan#297",
+    "branch": "Ulanadu",
+    "id": "1"
+  },
+  {
+    "username": "vallakali",
+    "password": "vall#298",
+    "branch": "Vallakali",
+    "id": "1"
+  },
+  {
+    "username": "venmoney",
+    "password": "venm#300",
+    "branch": "Venmoney",
+    "id": "1"
+  },
+  {
+    "username": "vettiyar",
+    "password": "vett#301",
+    "branch": "Vettiyar",
+    "id": "1"
+  }
+      ]
+      
+   
+
+
+

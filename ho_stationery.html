@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/status.css">
+    <link rel="shortcut icon" type="shortcuticon" href="image/logo.png">
+	<title>NIDHI-HR Management</title>
+</head>
+
+
+<body>
+    <div class="side-menu">
+		<div class="brand-name">
+            <div class="brand_logo"><img src="image/art_logot.png" alt="">
+            <h1>CHENGANNUR NIDHI</h1>
+        </div></div> 
+        <ul>
+            <li><a href="./ho_dashboard"><img src="image/dashboard (2).png" alt="" >&nbsp;<span>Dashboard</span></a> </li>
+            <li><a href=""><img src="image/leave ico.png" alt="">&nbsp;<span>Leave Application</span></a> </li>            
+            <li><a href="./ho_stationery"><img src="image/stationery.png" alt="">&nbsp;<span>stationery</span></a> </li>
+            <li><a href=""><img src="image/check-mail.png" alt="">&nbsp;<span>Messages</span> </a></li>
+            <li><a href=""><img src="image/phone.png" alt="">&nbsp;<span>Contacts</span></a></li>
+            <li><a href=""><img src="image/settings.png" alt="">&nbsp;<span>Settings</span></a> </li>
+        </ul>
+        <div class="logout">
+        <ul>
+            <li><a href="./"><img src="image/switch copy.png" alt="">&nbsp;<span>Logout</span></a> </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="container">        
+        <div class="header">
+            <div class="nav">
+                <div class="status_head">
+                    <h2>Stationary</h2>                    
+                </div>
+
+				<div class="branch_list">
+					<div class="branch_listDrop">						
+						 <select id="branchList"></select>
+					</div>
+				</div>
+
+                <div class="right_info">
+                    <div class="user_info">                    
+					<img src="image/user.png">
+                      <p name="branchName" id="branchName"></p>
+                      <input type="hidden" name="branchName" id="hiddenBranchName" />
+					</div>
+                    </div>                    
+                    </div>				
+                    </div>
+<div class="content">           
+    <div class="content-3">       
+       
+        <div id="reportContainer"></div>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Order Status</h3>	
+
+         <select id="modalStatusDropdown" required >     
+            <option value="Send">Send</option>
+            <option value="Not-Send">Not-Send</option> 
+			<option value="Re-Send">Re-Send</option>            
+        </select>
+		<div class="modalMssg">            
+            <textarea type="text" placeholder="Send Details..." id="Details" autocomplete="off"></textarea>
+        </div> 
+      <!--  <div class="modalMssg">
+            <label for="remarks">Remarks</label>
+            <input type="text" placeholder="send by..." id="statusMssg" autocomplete="off">
+        </div> -->
+        <div id="modalCheckboxContainer"></div> 
+        <div class="modal-buttons">
+            <button id="saveEditBtn">Save</button>
+            <button id="closeModalBtn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="Stationary_poup">           
+    <div class="Stationary-2">
+        <div class="title">
+            <h2>Stationary List</h2>                                
+        </div> 
+	</div>
+    </div>
+</div></div>
+
+
+<script type="module" src="js/sationho.js"></script>
+<script src="js/main.js"></script>
+
+</body>

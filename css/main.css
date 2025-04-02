@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #bdbdbdd5;
+}
+
+/* Login Page Styling--------------------------- */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #bdbdbdd5; 
+}
+.welc {
+    background: white;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 300px; /* Fixed width for login box */
+    height: 390px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.753);
+}
+.login_logo img {
+    width: 80px;
+    height: auto;
+}
+.login_form {    
+    padding: 25px;    
+    text-align: center;
+}
+.title_lg h2 {
+    margin-bottom: 5px;
+    color: #222222;
+}
+.title_lg p {
+    font-size: 14px;
+    color: #777;
+}
+.login_form input[type="text"],
+.login_form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.login_form input[type="submit"] {
+    width: 80%;
+    background: #000746;
+    color: white;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login_form input[type="submit"]:hover {
+    background: white;
+    color: #091180;
+    border: 2px solid #091180;
+    width: 90%;
+}
+#error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Ensure space for the eye icon */
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;    
+}
+
+/*--------------------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+}
+
+.btn, .btn1 {
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #091180;
+}
+
+.btn1 {
+   color: #990000;
+   font-weight: 600;
+}
+
+.btn:hover {
+    color: #091180;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #091180;
+}
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #000746;
+    padding: 15px 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-menu .brand-name {
+    text-align: center;
+    padding: 5px;
+}
+
+.side-menu .brand-name .brand_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0px;
+}
+
+.brand-name h1 {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.side-menu ul {
+    margin-top: 30px;
+    flex-grow: 1; 
+}
+
+.side-menu li a {
+    font-size: 15px;
+    padding: 17px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.side-menu li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.side-menu li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.side-menu .active {
+    background-color: #ffffff59;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 240px);
+    height: 100vh;
+    background: #bdbdbd3f;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 240px);
+    height: 9vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
+    z-index: 100;
+}
+
+.container .header .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right_info {
+    display: flex;   
+    align-items: center;
+    gap: 10px;
+   
+}
+.user_info {
+    display: flex;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 5px;    
+    color: #050505;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;    
+    text-transform: capitalize;
+}
+.user_info img{
+    width: 20px;
+    height: 20px;
+}
+.container .content {    
+    padding: 1px; 
+    margin-top: 60px;
+    
+}
+.container .content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .content-2 .recent-payments,
+.container .content-2 .new-students {
+    flex: 1;
+    height: 450px;
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.container .content-2 .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #999;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th, td {    
+    text-align: center;
+    padding: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: small;
+    background-color: #000746;
+    color: white;
+}
+td{
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .side-menu {
+        width: 200px;
+    }
+
+    .container .content {
+        margin-left: 200px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .right_info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user_info {
+        padding: 6px 15px;
+    }
+
+    .icon_wrap {
+        padding: 4px 8px;
+    }
+
+    .status_head {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-order .order {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .container .content-2 {
+        flex-direction: column;
+    }
+
+    .container .content-2 .recent-payments,
+    .container .content-2 .new-students {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .login_form {
+        width: 90%;
+    }
+}

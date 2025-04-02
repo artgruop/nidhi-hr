@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="shortcut icon" type="shortcuticon" href="image/logo.png">
+    <title>NIDHI-HR Management</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="welc"> 
+        <div class="login_form">
+            <div class="title_lg">
+                <h2>Sign In</h2> 
+                <div class="login_logo">
+                    <img src="image/logo-icon.png" class="slider-img" alt="Image 1">
+                </div>      
+                <p>Use your username and password</p>
+            </div>  
+                <div id="error-message" style="color: red; text-align: center; margin-bottom: 10px; font-size: 11px;">                    
+                </div>  
+            <form id="loginForm">
+                <input type="text" placeholder="User Name" id="username" name="username" autocomplete="off" required>
+                <div class="password-container">
+                    <input type="password" placeholder="Password" id="password" name="password" autocomplete="off" required>
+                    <span id="togglePassword" style="font-size: 8px;">Show Password</span>
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div> 
+     <script>
+            document.getElementById('loginForm').addEventListener('submit', async function(event) {
+         event.preventDefault();      
+         const username = document.getElementById('username').value.trim();
+         const password = document.getElementById('password').value.trim();
+         const errorMessage = document.getElementById('error-message'); 
+         errorMessage.innerHTML = "";      
+         // Get current date and time
+         const now = new Date();
+         const day = now.getDay(); 
+         const hours = now.getHours();
+         const minutes = now.getMinutes();     
+         const startHour = 9, startMinute = 30;
+         const endHour = 22, endMinute = 45;         
+         if (day === 0) {
+             errorMessage.innerHTML = "Login is not allowed";
+             return;
+         }         
+         if (
+             (hours < startHour || (hours === startHour && minutes < startMinute)) || 
+             (hours > endHour || (hours === endHour && minutes > endMinute))
+         ) {
+             errorMessage.innerHTML = "Login is not allowed";
+             return;
+         }     
+         try {             
+             const response = await fetch('resources/username.json');
+             if (!response.ok) {
+                 throw new Error(`HTTP error! Status: ${response.status}`);
+             }
+             const users = await response.json();             
+             const user = users.find(user => user.username === username && user.password === password);
+             if (user) {
+                 try { 
+                     localStorage.setItem('userName', user.branch); 
+                    // Redirect based on ID
+                    if (user.id === '1') {
+                        window.location.href = './branch_dashboard';
+
+                    } else if (user.id === '2') {
+                        window.location.href = './ho_dashboard';
+                    } else {
+                        alert('Invalid user ID. Please contact support.');
+                    }
+                 } catch (error) {
+                     console.error("Failed to save branch info in localStorage:", error);
+                     errorMessage.innerHTML = "An error occurred while logging in. Please try again.";
+                 }
+             } else {
+                 errorMessage.innerHTML = "Invalid username or password.";
+             }
+         } catch (error) {
+             console.error("Error fetching or processing user data:", error);
+             errorMessage.innerHTML = "An error occurred while logging in. Please try again.";
+         }
+     });
+
+     document.getElementById("togglePassword").addEventListener("click", function () {
+    const passwordField = document.getElementById("password");    
+    // Toggle between "password" and "text" type
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        this.innerText = "Hide"; 
+    } else {
+        passwordField.type = "password";
+        this.innerText = "Show Password";
+    }
+});
+
+    localStorage.clear();
+</script>
+    
+</body>
+</html>

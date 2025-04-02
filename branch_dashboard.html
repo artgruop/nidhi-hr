@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="shortcut icon" type="shortcuticon" href="image/logo.png">
+    <title>NIDHI-HR Management</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <div class="brand_logo"><img src="image/art_logot.png" alt="">
+                <h1>CHENGANNUR NIDHI</h1>
+        </div></div>       
+        <ul>
+            <li><a href="./branch_dashboard"><img src="image/dashboard (2).png" alt="" >&nbsp;<span>Dashboard</span></a> </li>
+            <li><a href=""><img src="image/leave ico.png" alt="">&nbsp;<span>Leave Application</span></a> </li>            
+            <li><a href="./branch_stationery"><img src="image/stationery.png" alt="">&nbsp;<span>stationery</span></a> </li>
+            <li><a href=""><img src="image/check-mail.png" alt="">&nbsp;<span>Messages</span> </a></li>            
+            <li><a href=""><img src="image/phone.png" alt="">&nbsp;<span>Contacts</span></a></li>
+            <li><a href=""><img src="image/settings.png" alt="">&nbsp;<span>Settings</span></a> </li>
+        </ul>
+        <div class="logout">
+        <ul>
+            <li><a href="./"><img src="image/switch copy.png" alt="">&nbsp;<span>Logout</span></a> </li>
+        </ul>
+    </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="status_head">            
+                    <h2>Home</h2>                    
+                </div>
+                <div class="right_info">
+                    <div class="user_info">
+                        <img src="image/user.png">
+                      <p name="branchName" id="branchName"></p>                     
+                      <input type="hidden" name="branchName" id="hiddenBranchName" />
+                    </div> 
+                    </div>				
+                    </div>
+                </div>
+        <div class="content">
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Leave Requsts</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>Stationery Orders</h2>
+                        <a href="./branch_stationery" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Branch</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderTableBody">
+                            <!-- Data will be inserted dynamically -->
+                        </tbody>
+                    </table>
+                </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+<script type="module" src="js/dash.js"></script>
+</body>
+</html>

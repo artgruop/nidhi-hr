@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/leave.css">
+    <link rel="shortcut icon" type="shortcuticon" href="image/ico.png">
+    <title>NIDHI-HR Management</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>CHENGANNUR NIDHI</h1>
+        </div>
+        <ul>
+            <li><a href="dashboard.html"><img src="image/dashboard (2).png" alt="" >&nbsp;<span>Dashboard</span></a> </li>
+            <li><a href="#" class="active"><img src="image/leave ico.png" alt="">&nbsp;<span>Leave Application</span></a> </li>            
+            <li><a href="stationary.html"><img src="image/stationery.png" alt="">&nbsp;<span>Stationary</span></a> </li>
+            <li><a href="#"><img src="image/check-mail.png" alt="">&nbsp;<span>Messages</span> </a></li>
+            <li><a href="#"><img src="image/branch.png" alt="">&nbsp;<span>Branch</span> </a></li>
+            <li><a href="#"><img src="image/phone.png" alt="">&nbsp;<span>Contacts</span></a></li>
+            <li><a href="#"><img src="image/settings.png" alt="">&nbsp;<span>Settings</span></a> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="status_head">
+                    <h2>Leave Requests</h2>
+                    <div class="btn-leave">
+                        <button type="submit" class="save">Leave Application</button> 
+                    </div>
+                </div>
+
+                <div class="right_info">
+                    <div class="user_info">
+                    <label for="branchName"></label>
+                      <p name="branchName" id="branchName"></p>
+                      <input type="hidden" name="branchName" id="hiddenBranchName" /></div>
+    
+    
+                      <div class="icon_wrap">                        
+                        <div class="icon">
+                            <a href="Login.html">
+                                <img src="Image/switch copy.png" alt="Switch Icon">
+                            </a>             
+                        </div>
+                    </div>                    
+                    </div>				
+                    </div>
+                </div>
+                <div class="content-3">
+               <!-- <div class="collection-form">
+                    <div class="title">
+                        <h2>Leave Application</h2>
+                    </div>
+                    <div class="wrapper">
+                        <form action="#" id="collectionForm">
+                            <div class="form-fields">
+                                <div class="input-box">
+                                    <input type="hidden" id="id" />        
+                                   <label for="deposit-date">staffName</label>
+                                    <input type="text" id="depositDate" required autocomplete="off">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="staff-name">Staff Name</label>
+                                    <input type="text" placeholder="Staff Full Name" id="staffName" required autocomplete="off">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="receipt-date">leave type</label>
+                                    <input type="text" id="receiptDate" required autocomplete="off">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="cust-name">leave</label>
+                                    <input type="text" placeholder="Customer Full Name" id="custName" required autocomplete="off">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="chit-number">leave from</label>
+                                    <input type="date" placeholder="Chitty Number" id="chitNumber" required autocomplete="off">
+                                </div>
+                                <div class="input-box">
+                                    <label for="instalment">leave to</label>
+                                    <input type="date" placeholder="Instalment Number" id="instalment" required autocomplete="off">
+                                </div>
+                                <div class="input-box">
+                                    <label for="receipt-num">Reson</label>
+                                    <input type="note" placeholder="Receipt Number" id="receiptNum" required  style="height: 90px;" autocomplete="off">
+                                </div>
+                            
+                                <div class="input-box">
+                                    <label for="amount">Amount</label>
+                                    <input type="text" placeholder="Collection Amount" id="amount" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="commission">Commission</label>
+                                    <input type="text" placeholder="Commission" id="commission">
+                                </div>
+                                <div class="input-box">
+                                    <label for="bank-amount">Bank Amount</label>
+                                    <input type="text" placeholder="Amount Deposited In Bank" id="bankAmount" required>
+                                </div>
+                            </div>
+        
+                            <div class="btn-cnt">
+                                <button type="submit" class="save">
+                                    <img src="Image/save.svg" class="ion-icon">Apply
+                                </button>
+                                <button type="reset" class="clear">
+                                    <img src="Image/cance.png" class="ion-icon">Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>-->
+            <br>
+            <div class="content">           
+                <div class="content-2">
+                    <div class="leav_status_head">            
+                       
+                    <div id="leavereport"></div> 
+                </div>
+            </div>
+            
+         
+                <div class="wrapper" id="leaveModal">
+                    <form action="#" id="leaveapplyForm">
+                        <div class="Leave-form">
+                            <div class="title">
+                                <h2>Leave Application</h2>
+                            </div>
+                        <div class="form-fields">
+                            <div class="input-box">
+                                <input type="hidden" id="id" />        
+                               <label for="company">Company</label>
+                                <input type="text" placeholder="Company Name" id="company" required autocomplete="off">
+                            </div>
+                            <div class="input-box">
+                                <label for="staff-name">Name</label>
+                                <input type="text" placeholder="Full Name" id="staffName" required autocomplete="off">
+                            </div> 
+
+                            <div class="input-box">
+                                <label for="leave-type">Leave Type</label>                                
+                                <select id="leave-type" required>
+                                    <option value="" disabled selected>Select leave type</option>
+                                    <option value="sick">Full Day</option>
+                                    <option value="casual">Half Day</option>                                    
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="cust-name">leave</label>
+                                <select id="leave">
+                                    <option value="" disabled selected>Select leave type</option>
+                                    <option value="sick">Morning</option>
+                                    <option value="casual">Afternoon</option>                                    
+                                </select>
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="chit-number">leave from</label>
+                                <input type="date" placeholder="Chitty Number" id="chitNumber" required autocomplete="off">
+                            </div>
+                            <div class="input-box">
+                                <label for="instalment">leave to</label>
+                                <input type="date" placeholder="Instalment Number" id="instalment" required autocomplete="off">
+                            </div>
+                            <div class="input-box textarea">
+                                <label for="receipt-num">Reson</label>
+                                <input type="note" placeholder="Receipt Number" id="receiptNum" required  style="height: 90px;" autocomplete="off">
+                            </div>                                                
+    
+                        <div class="btn-leave_apply">
+                            <button type="submit" class="save">Submit</button>
+                            <button type="reset" class="clear">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+        <script src="js/brpic.js"></script>
+        <script type="module" src="js/leav.js"></script>
+</body>
+</html>
